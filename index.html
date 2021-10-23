@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Социальная сеть</title>
+    <!-- подключаем шрифт -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="navbar-panel-wrapper">
+          <a href="#" class="header-logo">
+            <img src="img/logo.svg" alt="logo" class="logo-image" />
+          </a>
+          <div class="navbar">
+            <nav class="header-nav">
+              <ul class="header-menu">
+                <li class="menu-item">
+                  <a href="#" class="menu-link">Home</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-link">Listing</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-link">Property</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-link">Agents</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-link">Blog</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="sing-in">Sign In</button>
+          </div>
+        </div>
+        <div class="hiro">
+          <h1 class="hiro-title">
+            Easy way to find a home<br />
+            that’s perfect for you
+          </h1>
+          <span class="hiro-subtitle">
+            The find and most trusted marketplace of design & build house in the
+            world.
+          </span>
+          <div class="hiro-panel">
+            <div class="tab">
+              <button
+                class="tablinks active"
+                onclick="openCity(event, 'Москва')"
+              >
+                Rent
+              </button>
+              <button class="tablinks" onclick="openCity(event, 'Берлин')">
+                Buy
+              </button>
+              <button class="tablinks" onclick="openCity(event, 'Пекин')">
+                Sell
+              </button>
+            </div>
+            <div id="Москва" class="tabcontent" style="display: block">
+              <div class="location-wrapper">
+                <div class="location">
+                  <div class="location-subtitle-wrapper">
+                    <img
+                      src="img/location-1.svg"
+                      alt="icon"
+                      class="location-icon"
+                    />
+                    <span class="location-subtitle">Location</span>
+                  </div>
+                  <span class="location-title">Los Angels</span>
+                </div>
+                <div class="location">
+                  <div class="location-subtitle-wrapper">
+                    <img
+                      src="img/location-2.svg"
+                      alt="icon"
+                      class="location-icon"
+                    />
+                    <span class="location-subtitle">Property Type</span>
+                  </div>
+                  <span class="location-title">Delux</span>
+                </div>
+                <div class="location">
+                  <div class="location-subtitle-wrapper">
+                    <img
+                      src="img/location-3.svg"
+                      alt="icon"
+                      class="location-icon"
+                    />
+                    <span class="location-subtitle">Average Price</span>
+                  </div>
+                  <span class="location-title">$7000 - 8000</span>
+                </div>
+                <button class="search">Search</button>
+              </div>
+            </div>
+
+            <div id="Берлин" class="tabcontent">
+              <h3>Берлин</h3>
+              <p>Берлин это столица Германии.</p>
+            </div>
+
+            <div id="Пекин" class="tabcontent">
+              <h3>Пекин</h3>
+              <p>Пекин это столица Китая.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-hiro">
+        <img src="img/bg-hiro.png" alt="" class="bg-hiro-image" />
+      </div>
+    </header>
+    <script src="js/main.js"></script>
+  </body>
+</html>
